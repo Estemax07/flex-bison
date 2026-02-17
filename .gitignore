@@ -1,0 +1,14 @@
+# Generados por flex/bison
+lex.yy.c
+*.tab.c
+*.tab.h
+
+# Ejecutables
+fb1-*
+
+# Objetos
+*.o
+
+# macOS
+.DS_Store
+
