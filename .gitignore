@@ -4,7 +4,12 @@ lex.yy.c
 *.tab.h
 
 # Ejecutables
-fb1-*
+# ejecutables (sin extension)
+fb1-1
+fb1-2
+fb1-3
+fb1-4
+fb1-5
 
 # Objetos
 *.o
