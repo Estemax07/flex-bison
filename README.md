@@ -44,8 +44,21 @@ El scanner escrito manualmente no necesariamente reconoce exactamente los mismos
 Aunque ambos pueden aceptar los mismos patrones básicos, Flex aplica reglas automáticas como longest match y prioridad por orden de aparición, lo que puede generar diferencias en casos límite, manejo de errores o fin de archivo.
 
 ### Ejercicio 6 – División por cero
-Se analizó la reescritura del programa de conteo de palabras utilizando lenguaje C puro para compararlo con la versión implementada con Flex.
-Al ejecutar ambos programas sobre archivos grandes no se observaron diferencias de rendimiento significativas. Sin embargo, la versión en C resultó más extensa y menos cómoda de depurar que la versión desarrollada con Flex.
+Se reescribió el programa de conteo de palabras en lenguaje C puro y se comparó con la versión implementada con Flex utilizando un archivo de gran tamaño.
+
+Pruebas realizadas con un archivo de aproximadamente un millón de líneas, generado artificialmente, ejecutando ambos programas con el comando time.
+
+Resultados obtenidos:
+
+Versión Flex (fb1-1):
+Tiempo real ≈ 0.98 s
+
+Versión C (wc_c):
+Tiempo real ≈ 1.03 s
+
+A partir de estas pruebas no se observa una diferencia de rendimiento significativa entre ambas implementaciones. En este caso particular, la versión desarrollada con Flex resultó levemente más rápida que la versión escrita en C puro.
+
+En cuanto a la depuración, la versión en C requirió un mayor manejo manual del estado (detección de inicio y fin de palabras), mientras que la versión con Flex permitió expresar la lógica de forma más declarativa, resultando más sencilla de mantener y depurar.
 
 ## Organización del código
 
