@@ -35,14 +35,17 @@ Se agregó soporte para números en formato hexadecimal (`0x...`) desde el anali
 ### Ejercicio 3 – Salida en decimal y hexadecimal
 Se modificó la acción semántica del parser para mostrar el resultado tanto en formato decimal como hexadecimal.
 
-### Ejercicio 4 – Paréntesis
-Se incorporó el uso de paréntesis para permitir el agrupamiento de expresiones y controlar correctamente la precedencia de los operadores.
+### Ejercicio 4
+El scanner escrito manualmente no necesariamente reconoce exactamente los mismos tokens que el scanner generado con Flex.
+Aunque ambos pueden aceptar los mismos patrones básicos, Flex aplica reglas automáticas como longest match y prioridad por orden de aparición, lo que puede generar diferencias en casos límite, manejo de errores o fin de archivo.
 
-### Ejercicio 5 – Operador potencia
-Se agregó el operador de potencia (`^`), implementado como asociativo a derecha, permitiendo evaluar expresiones con múltiples exponentes.
+### Ejercicio 5
+El scanner escrito manualmente no necesariamente reconoce exactamente los mismos tokens que el scanner generado con Flex.
+Aunque ambos pueden aceptar los mismos patrones básicos, Flex aplica reglas automáticas como longest match y prioridad por orden de aparición, lo que puede generar diferencias en casos límite, manejo de errores o fin de archivo.
 
 ### Ejercicio 6 – División por cero
-Se implementó la detección de divisiones por cero, mostrando un mensaje de error sin finalizar la ejecución del programa.
+Se analizó la reescritura del programa de conteo de palabras utilizando lenguaje C puro para compararlo con la versión implementada con Flex.
+Al ejecutar ambos programas sobre archivos grandes no se observaron diferencias de rendimiento significativas. Sin embargo, la versión en C resultó más extensa y menos cómoda de depurar que la versión desarrollada con Flex.
 
 ## Organización del código
 
