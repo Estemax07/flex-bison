@@ -17,3 +17,5 @@ fb1-5
 # macOS
 .DS_Store
 
+# archivos de prueba grandes
+big.txt
